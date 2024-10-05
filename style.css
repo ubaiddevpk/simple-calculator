@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f9;
+
+ background: linear-gradient(to right , rgb(116, 86, 86),green,rgb(199, 47, 153),aqua,gold );
+}
+
+.maincontainer{
+background-color: rgb(0, 0, 0);
+padding-top: 200px;
+width: 250px;
+height: 520px;
+border-radius: 20px;
+padding-bottom: px;
+}
+
+.container{
+  display: grid;
+   grid-template-columns:repeat(4, 1fr);
+   row-gap: 10px;
+  margin: 5px;
+   column-gap: 10px;
+   margin-top: 20px;
+ margin-left: 5px;
+   object-fit: ;
+}
+.key{
+  background-color: #2f2f2f;
+  height: 50px;
+  border-radius: 50px;
+  width: 50px;
+
+color: white;
+margin-left: 1.3px;
+font-size: 20px;
+ border: none;
+
+ 
+}
+.maths{
+  color: greenyellow;
+  background-color: rgb(10, 10, 235);
+}
+.key.maths:hover{
+  background-color: rgb(83, 83, 212);
+}
+.key.cancle{
+  background-color: #ff0000;
+}
+.key.equal{
+  background-color: #00ff00;
+}
+.key:hover{
+  background-color: #c7bbbb;
+  cursor: pointer;
+}
+.key.cancle:hover{
+  background-color: #cc2424;
+}
+.key.equal:hover{
+  background-color: #28d128;
+}
+#input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #404440;
+  position: absolute;
+  top: 18px; /* Adjust the distance from the top */
+  left: 50%; /* Center align the input */
+  transform: translateX(-50%); /* Center horizontally */
+  height: 196px;
+  width: 247px;
+  font-size: 40px;
+ /* Remove default borders */
+  outline: none; /* Remove focus outline */
+  color: rgb(255, 255, 255); /* Text color */
+text-align: right;
+  direction: rtl; /* Make text start from the right */
+  word-wrap: break-word; /* Ensure text wraps inside */
+  overflow: hidden; /* Hide overflow */
+  resize: none; /* Disable textarea resizing */
+border-radius: 20px;
+border: none;
+
+
+}
